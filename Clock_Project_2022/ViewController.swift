@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-        label.textColor = .white
+        label.textColor = .black
         label.text = "ANALOG CLOCK"
         view.addSubview(label)
         return label
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-        label.textColor = .white
+        label.textColor = .black
         label.text = "DIGITAL CLOCK"
         view.addSubview(label)
         return label
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.backgroundColor = UIColor.systemOrange
+        
         setConstraints()
         tickCurrentTime()
         startTimer()
