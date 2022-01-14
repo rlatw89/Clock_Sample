@@ -16,6 +16,12 @@
 		0253035727919DCE009563D8 /* Clock_Project_2022Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253035627919DCE009563D8 /* Clock_Project_2022Tests.swift */; };
 		0253036127919DCE009563D8 /* Clock_Project_2022UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253036027919DCE009563D8 /* Clock_Project_2022UITests.swift */; };
 		0253036327919DCE009563D8 /* Clock_Project_2022UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253036227919DCE009563D8 /* Clock_Project_2022UITestsLaunchTests.swift */; };
+		0253037227919E4C009563D8 /* AnalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253037127919E4C009563D8 /* AnalogView.swift */; };
+		0253037427919FAD009563D8 /* HandsOfTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253037327919FAD009563D8 /* HandsOfTime.swift */; };
+		025303762791A029009563D8 /* DigitalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025303752791A029009563D8 /* DigitalView.swift */; };
+		025303782791A05E009563D8 /* DigitalDotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025303772791A05E009563D8 /* DigitalDotView.swift */; };
+		0253037A2791A093009563D8 /* DigitalUnitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025303792791A093009563D8 /* DigitalUnitView.swift */; };
+		0253037C2791A0CD009563D8 /* DigitalComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0253037B2791A0CD009563D8 /* DigitalComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		0253035C27919DCE009563D8 /* Clock_Project_2022UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Clock_Project_2022UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0253036027919DCE009563D8 /* Clock_Project_2022UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock_Project_2022UITests.swift; sourceTree = "<group>"; };
 		0253036227919DCE009563D8 /* Clock_Project_2022UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock_Project_2022UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0253037127919E4C009563D8 /* AnalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogView.swift; sourceTree = "<group>"; };
+		0253037327919FAD009563D8 /* HandsOfTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandsOfTime.swift; sourceTree = "<group>"; };
+		025303752791A029009563D8 /* DigitalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalView.swift; sourceTree = "<group>"; };
+		025303772791A05E009563D8 /* DigitalDotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalDotView.swift; sourceTree = "<group>"; };
+		025303792791A093009563D8 /* DigitalUnitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalUnitView.swift; sourceTree = "<group>"; };
+		0253037B2791A0CD009563D8 /* DigitalComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,8 @@
 		0253033E27919DCE009563D8 /* Clock_Project_2022 */ = {
 			isa = PBXGroup;
 			children = (
+				0253037027919E0B009563D8 /* Digital */,
+				0253036F27919DEC009563D8 /* Analog */,
 				0253033F27919DCE009563D8 /* AppDelegate.swift */,
 				0253034127919DCE009563D8 /* SceneDelegate.swift */,
 				0253034327919DCE009563D8 /* ViewController.swift */,
@@ -125,6 +139,26 @@
 				0253036227919DCE009563D8 /* Clock_Project_2022UITestsLaunchTests.swift */,
 			);
 			path = Clock_Project_2022UITests;
+			sourceTree = "<group>";
+		};
+		0253036F27919DEC009563D8 /* Analog */ = {
+			isa = PBXGroup;
+			children = (
+				0253037127919E4C009563D8 /* AnalogView.swift */,
+				0253037327919FAD009563D8 /* HandsOfTime.swift */,
+			);
+			path = Analog;
+			sourceTree = "<group>";
+		};
+		0253037027919E0B009563D8 /* Digital */ = {
+			isa = PBXGroup;
+			children = (
+				025303752791A029009563D8 /* DigitalView.swift */,
+				025303772791A05E009563D8 /* DigitalDotView.swift */,
+				025303792791A093009563D8 /* DigitalUnitView.swift */,
+				0253037B2791A0CD009563D8 /* DigitalComponent.swift */,
+			);
+			path = Digital;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +292,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				025303782791A05E009563D8 /* DigitalDotView.swift in Sources */,
+				0253037A2791A093009563D8 /* DigitalUnitView.swift in Sources */,
+				0253037427919FAD009563D8 /* HandsOfTime.swift in Sources */,
+				0253037227919E4C009563D8 /* AnalogView.swift in Sources */,
+				0253037C2791A0CD009563D8 /* DigitalComponent.swift in Sources */,
 				0253034427919DCE009563D8 /* ViewController.swift in Sources */,
+				025303762791A029009563D8 /* DigitalView.swift in Sources */,
 				0253034027919DCE009563D8 /* AppDelegate.swift in Sources */,
 				0253034227919DCE009563D8 /* SceneDelegate.swift in Sources */,
 			);
